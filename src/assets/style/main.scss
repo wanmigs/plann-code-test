@@ -1,0 +1,22 @@
+@import "../../../node_modules/bulma/bulma.sass";
+@import "./fonts";
+@import "./fonts";
+@import "./colors";
+@import "./utilities";
+
+body,
+html {
+  font-size: 16px;
+  font-family: "Proxima Nova";
+  color: #04446b;
+  background-color: #f6f8ff;
+}
+
+#app {
+  height: 100vh;
+}
+
+.box {
+  padding: 30px 40px;
+  margin: 0 !important;
+}

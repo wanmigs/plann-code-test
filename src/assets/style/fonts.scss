@@ -1,0 +1,27 @@
+@mixin font($font-family, $font-file, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + ".ttf");
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@include font(
+  "Proxima Nova",
+  "../fonts/ProximaNova/ProximaNova-Regular",
+  400,
+  "normal"
+);
+@include font(
+  "Proxima Nova",
+  "../fonts/ProximaNova/ProximaNova-Semibold",
+  600,
+  "normal"
+);
+@include font(
+  "Proxima Nova",
+  "../fonts/ProximaNova/ProximaNova-Bold",
+  700,
+  "normal"
+);

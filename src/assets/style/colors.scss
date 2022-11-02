@@ -1,0 +1,11 @@
+$colors: "navy" #04446b, "plann" #86beeb, "skyblue" #81c4ee, "orange" #fcab95,
+  "teal" #8ccecf;
+
+@each $name, $value in $colors {
+  .has-background-#{$name} {
+    background-color: $value;
+  }
+  .has-text-#{$name} {
+    color: $value;
+  }
+}

@@ -1,0 +1,45 @@
+.text-center {
+  text-align: center;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.normal-case {
+  text-transform: none;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+.self-start {
+  align-self: flex-start;
+}
+
+.text-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1.25rem; /* 20px */
+}
+
+@for $i from 1 through 12 {
+  .gap-#{$i} {
+    gap: calc($i * 0.25rem);
+  }
+  .h-#{$i} {
+    height: calc($i * 0.25rem);
+  }
+  .w-#{$i} {
+    width: calc($i * 0.25rem);
+  }
+}
